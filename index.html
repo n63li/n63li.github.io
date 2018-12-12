@@ -10,40 +10,54 @@
   <body class="layout-portfolio">
     <div class="site-header site-header-portfolio">
       <div class="container-buttons">
-        <button class="bttn-stretch bttn-md bttn-default">About Me</button>
-        <button class="bttn-stretch bttn-md bttn-default">Experience</button>
-        <button class="bttn-stretch bttn-md bttn-default">Projects</button>
+        <button
+          class="bttn-stretch bttn-md bttn-default">
+          About Me
+        </button>
+        <button
+          class="bttn-stretch bttn-md bttn-default"
+          title="$.scrollTo('#work', 800, {easing:'elasout'});"
+          href="#work">
+          Experience
+        </button>
+        <button
+            class="bttn-stretch bttn-md bttn-default"
+            onclick="scrollTo('#projects')">
+          Projects
+        </button>
         <button class="bttn-stretch bttn-md bttn-default">Portfolio</button>
       </div>
     </div>
 
 
     <div class="content-wrapper portfolio-intro">
-      <h3 class="portfolio-intro-subheader">Hey there, I'm</h3>
+      <h3 class="portfolio-intro-subheader">Hello, I'm</h3>
       <h1 class="ml6">
         <span class="text-wrapper">
           <span class="letters">Nathan Li</span>
         </span>
       </h1>
-      <h2>mechatronics student with a passion for software and design</h2>
+      <h2>a mechatronics student with a passion for software and design.</h2>
     </div>
 
 
 
-    <div class="content-wrapper work-experience">
+    <div id="work" class="content-wrapper work-experience">
       <h2 class="section-header">Work.</h2>
     </div>
 
-    <div class="content-wrapper projects">
+    <div id="projects" class="content-wrapper projects">
       <h2 class="section-header">Play.</h2>
     </div>
 
-    <div class="content-wrapper contact-info">
-      <h2 class="section-header">Say hi.</h2>
+    <div id="contact" class="content-wrapper contact-info">
+      <h2 class="section-header">Let's talk.</h2>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+
   </body>
 </html>

@@ -22,7 +22,7 @@ body{
 
 .site-header-portfolio {
   margin-top: 10px;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 
@@ -43,9 +43,21 @@ body{
 
 .portfolio-intro{
   height: 100%;
-  /*position: relative;*/
+  position: relative;
   margin-top: 0;
   padding-top: 5vh;
+}
+
+.portfolio-intro-subheader{
+  position: relative;
+  padding: 0 20px;
+  top: 34.5%;
+  left: 0;
+  right: 0;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 5px;
+  font-weight: 600;
 }
 
 .section-header {
@@ -68,25 +80,31 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
-  /*color: white;*/
+}
+
+h3{
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 .bttn-stretch {
   margin: 0;
-  padding: 0;
-  border-width: 0;
-  border-color: transparent;
+  border: 0 transparent;
   background: transparent;
   font-weight: 400;
   cursor: pointer;
   position: relative;
-  font-size: 20px;
+  font-size: 15px;
+  text-transform: uppercase;
   font-family: inherit;
   padding: 5px 12px;
   overflow: hidden;
-  border-width: 0;
   border-radius: 0;
-  background: transparent;
   color: #000;
   letter-spacing: 0;
   -webkit-transition: all 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
@@ -136,8 +154,8 @@ h2 {
   transform: scaleX(1);
 }
 
-
 .ml6 {
+  margin-top: 20px;
   position: relative;
   font-weight: 900;
   font-size: 7.5em;
@@ -156,5 +174,4 @@ h2 {
   display: inline-block;
   line-height: 1em;
   text-align: center;
-  /*color: black;*/
 }

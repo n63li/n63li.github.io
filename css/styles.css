@@ -93,6 +93,7 @@ body{
   height: 40px;
   background-image: url('../images/angle-down.svg');
   background-size: contain;
+  opacity: 1;
 }
 
 .bounce{

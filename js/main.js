@@ -1,5 +1,4 @@
 //Scroll to plugin for buttons
-
 function scrollToElement(scrollTo) {
   $('html, body').animate({
     scrollTop: scrollTo.offset().top
@@ -47,6 +46,11 @@ anime.timeline({loop: true})
 });
 
 //Arrow down disappears when scrolling down
+// $(window).scroll(function(){
+//   $(".arrow.bounce").toggle($(this).scrollTop() === 0);
+// });
+
+//Arrow down fades in and out on scroll
 $(window).scroll(function(){
-  $(".arrow.bounce").toggle($(this).scrollTop() === 0);
+  $(".arrow.bounce").css("opacity", 1 - $(window).scrollTop() / 30);
 });

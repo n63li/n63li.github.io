@@ -1,10 +1,32 @@
+//Scroll to plugin for buttons
+
+function scrollToElement(scrollTo) {
+  $('html, body').animate({
+    scrollTop: scrollTo.offset().top
+  }, 625);
+}
+
+$(document).ready(function() {
+  $("#about-button").click(function() {
+    scrollToElement($("#work"));
+  });
+});
+
+$(document).ready(function() {
+  $("#experience-button").click(function() {
+    scrollToElement($("#work"));
+  });
+});
+
+$(document).ready(function() {
+  $("#projects-button").click(function() {
+    scrollToElement($("#projects"));
+  });
+});
+
 // Animating name text
 $('.ml6 .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
-});
-
-$(window).scroll(function(){
-  $(".arrow.bounce").toggle($(this).scrollTop() === 0);
 });
 
 anime.timeline({loop: true})
@@ -24,3 +46,7 @@ anime.timeline({loop: true})
   delay: 1000
 });
 
+//Arrow down disappears when scrolling down
+$(window).scroll(function(){
+  $(".arrow.bounce").toggle($(this).scrollTop() === 0);
+});

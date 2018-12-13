@@ -62,7 +62,7 @@ body{
 
 .section-header {
   font-family: Inter UI,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
-  font-size: 160px;
+  font-size: 120px;
   font-weight: 800;
   text-align: left;
   z-index: 10;
@@ -71,6 +71,46 @@ body{
   pointer-events: none;
   flex: 1 100%;
   margin: 0;
+}
+
+.section-subheader{
+  white-space: nowrap;
+  font: normal 62px/1.1 "EB Garamond", serif;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateZ(0);
+  position: relative;
+  z-index: 10;
+}
+
+.work-info{
+  color: #fff;
+  padding-top: 75px;
+  padding-right: 55%;
+  padding-left: 50px;
+  background-color: #3F435E;
+  text-align: left;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.company-picture{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  background-color: #e7e8ed;
+}
+
+.projects-info{
+  color: #fff;
+  padding-top: 75px;
+  padding-right: 55%;
+  padding-left: 50px;
+  background-color: #F8E6D8;
+  text-align: left;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .contact-info{
@@ -82,6 +122,54 @@ body{
   text-align: left;
   position: relative;
   box-sizing: border-box;
+}
+
+/*.left-card{*/
+  /*width: 500px;*/
+  /*max-width: 50%;*/
+  /*position: relative;*/
+  /*float: left;*/
+  /*padding*/
+/*}*/
+
+/*.right-card{*/
+  /*max-width: 50%;*/
+  /*position: relative;*/
+  /*float: right;*/
+/*}*/
+
+.card-subheader{
+  max-width: 70%;
+
+  font-size:24px;
+  position: relative;
+}
+
+.card-text{
+  max-width: 70%;
+  margin: 0 auto;
+  margin: 0 0 2em;
+  font-size: 16px;
+  line-height: 1.9em;
+  position: relative;
+  z-index: 10;
+  padding-top: 1em;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateZ(0);
+  font-family: Inter UI,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+}
+
+.divider{
+  display: block;
+  position: relative;
+  height: 3px;
+  background-color: currentColor;
+  width: 60px;
+  right: initial;
+  margin: 70px auto 10px;
+  margin-left: 0px;
+  transform: scaleX(0.8);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .arrow{

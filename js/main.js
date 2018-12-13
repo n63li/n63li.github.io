@@ -6,12 +6,6 @@ function scrollToElement(scrollTo) {
 }
 
 $(document).ready(function() {
-  $("#about-button").click(function() {
-    scrollToElement($("#work"));
-  });
-});
-
-$(document).ready(function() {
   $("#experience-button").click(function() {
     scrollToElement($("#work"));
   });
@@ -20,6 +14,12 @@ $(document).ready(function() {
 $(document).ready(function() {
   $("#projects-button").click(function() {
     scrollToElement($("#projects"));
+  });
+});
+
+$(document).ready(function() {
+  $("#contact-button").click(function() {
+    scrollToElement($("#contact"));
   });
 });
 

@@ -3,6 +3,10 @@ $('.ml6 .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
 });
 
+$(window).scroll(function(){
+  $(".arrow.bounce").toggle($(this).scrollTop() === 0);
+});
+
 anime.timeline({loop: true})
   .add({
     targets: '.ml6 .letter',

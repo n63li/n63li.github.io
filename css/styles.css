@@ -135,6 +135,7 @@ body{
   text-align: left;
   position: relative;
   box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .card-subheader{
@@ -174,6 +175,11 @@ body{
   margin-left: 0px;
   transform: scaleX(0.8);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.divider-vertical{
+  width: 3px;
+  height: 60px;
 }
 
 .arrow{

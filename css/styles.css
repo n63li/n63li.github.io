@@ -86,7 +86,7 @@ body{
   margin: 0;
 }
 
-.work-info{
+.info-card{
   width:100%;
   display: flex;
   height: 80vh;
@@ -126,20 +126,9 @@ body{
   bottom: 0;
 }
 
-.projects-info{
-  color: #fff;
-  padding-top: 75px;
-  padding-right: 55%;
-  padding-left: 50px;
-  background-color: #F8E6D8;
-  text-align: left;
-  position: relative;
-  box-sizing: border-box;
-}
-
 .contact-info{
   color: #fff;
-  padding-top: 75px;
+  padding-top: 50px;
   padding-right: 55%;
   padding-left: 50px;
   background-color: #1f4954;
@@ -150,7 +139,6 @@ body{
 
 .card-subheader{
   max-width: 70%;
-
   font-size:24px;
   position: relative;
 }
@@ -167,6 +155,12 @@ body{
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform: translateZ(0);
   font-family: Inter UI,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+}
+
+.contact{
+  max-width: 100%;
+  padding-top: 0;
+  padding-bottom: 50px;
 }
 
 .divider{
@@ -412,5 +406,61 @@ h3{
 .slider__slide:nth-child(4) {
   background: #4086FA;
 }
+
+.contact-button-container{
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform: perspective(800px);
+}
+
+contact-button {
+  position: relative;
+  display: inline-block;
+  padding: 1.2em 2em;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+}
+contact-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border-radius: 4px;
+  transition: box-shadow .5s ease, transform .2s ease;
+  will-change: transform;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(var(--tz, -12px));
+}
+contact-button:hover::before {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+contact-button::after {
+  position: relative;
+  display: inline-block;
+  content: attr(data-title);
+  transition: transform .2s ease;
+  font-weight: bold;
+  letter-spacing: .01em;
+  will-change: transform;
+  transform: translateY(var(--ty, 0)) rotateX(var(--rx, 0)) rotateY(var(--ry, 0));
+}
+
+
+
 
 

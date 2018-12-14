@@ -128,7 +128,7 @@ body{
 
 .contact-info{
   color: #fff;
-  padding-top: 50px;
+  padding-top: 34px;
   padding-right: 55%;
   padding-left: 50px;
   background-color: #1f4954;
@@ -157,10 +157,10 @@ body{
   font-family: Inter UI,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
 }
 
-.contact{
-  max-width: 100%;
-  padding-top: 0;
-  padding-bottom: 50px;
+.contact-text{
+  max-width: 95%;
+  padding-top: 1em;
+  padding-bottom: 2em;
 }
 
 .divider{

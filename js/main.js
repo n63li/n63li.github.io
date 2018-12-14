@@ -55,6 +55,7 @@ $(window).scroll(function(){
   $(".arrow.bounce").css("opacity", 1 - $(window).scrollTop() / 30);
 });
 
+//Material slider cards
 let dots          = 4;
 let sliderElem    = document.querySelector('.slider')
 let dotElems      = sliderElem.querySelectorAll('.slider__dot')
@@ -79,6 +80,8 @@ Array.prototype.forEach.call(dotElems, (dotElem) => {
 
 });
 
+
+//Parallax contact button
 const docStyle = document.documentElement.style
 const aElem = document.querySelector('contact-button')
 const boundingClientRect = aElem.getBoundingClientRect()

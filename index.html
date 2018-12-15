@@ -49,7 +49,7 @@
     <div id="work" class="content-wrapper work-experience">
       <h2 class="section-header">Work.</h2>
       <div class="info-card">
-        <div class="slider" data-pos="0">
+        <div id= "work-slider" class="slider" data-pos="0">
           <div class="slider__slides">
             <div class="slider__slide">
               <p class="section-subheader">Hardware Developer</p>
@@ -81,8 +81,8 @@
             <div class="slider__slide"></div>
           </div>
           <div class="slider__dots">
-            <a href="#" class="slider__indicator"/>
-            <a href="#" class="slider__dot" data-pos="0"/>
+            <a id="work-slider-indicator" href="#" class="slider__indicator"/>
+            <a id="work-slider-dot" href="#" class="slider__dot" data-pos="0"/>
             <a href="#" class="slider__dot" data-pos="1"/>
             <a href="#" class="slider__dot" data-pos="2"/>
             <a href="#" class="slider__dot" data-pos="3"></a>
@@ -94,28 +94,28 @@
     <div id="projects" class="content-wrapper projects">
       <h2 class="section-header">Play.</h2>
       <div class="info-card">
-        <div class="slider" data-pos="0">
-          <div class="slider__slides">
-            <div class="slider__slide">
+        <div id="projects-slider" class="projects__slider" data-pos="0">
+          <div class="projects__slider__slides">
+            <div class="projects__slider__slide">
               <p class="section-subheader">Hardware Developer</p>
               <div class="divider"></div>
             </div>
-            <div class="slider__slide">
+            <div class="projects__slider__slide">
               <p class="section-subheader">Electrical Engineering Coop</p>
               <div class="divider"></div>
             </div>
-            <div class="slider__slide">
+            <div class="projects__slider__slide">
               <p class="section-subheader">Junior Process Engineer</p>
               <div class="divider"></div>
             </div>
-            <div class="slider__slide"></div>
+            <div class="projects__slider__slide"></div>
           </div>
-          <div class="slider__dots">
-            <a href="#" class="slider__indicator"></a>
-            <a href="#" class="slider__dot" data-pos="0"></a>
-            <a href="#" class="slider__dot" data-pos="1"></a>
-            <a href="#" class="slider__dot" data-pos="2"></a>
-            <a href="#" class="slider__dot" data-pos="3"></a>
+          <div class="projects__slider__dots">
+            <a id="projects-slider-indicator" href="#" class="projects__slider__indicator"/>
+            <a href="#" class="projects__slider__dot" data-pos="0"/>
+            <a href="#" class="projects__slider__dot" data-pos="1"/>
+            <a href="#" class="projects__slider__dot" data-pos="2"/>
+            <a href="#" class="projects__slider__dot" data-pos="3"></a>
           </div>
         </div>
       </div>
@@ -130,11 +130,23 @@
         </p>
         <div class="divider divider-vertical"></div>
         <div class="contact-button-container">
-          <contact-button onclick="window.open('https://github.com/n63li')">
-            <img src="../personalwebsite/images/GitHub-Mark-Light-64px.png"/>
-          </contact-button>
-          <contact-button onclick="window.open('https://www.linkedin.com/in/nathantfli/')">
-          </contact-button>
+          <img src="images/GitHub-Mark-Light-64px.png"/>
+          <!--<div-->
+            <!--class="contact-button"-->
+            <!--id="github-button"-->
+            <!--onclick="window.open('https://github.com/n63li')">-->
+            <!--<img src="../personalwebsite/images/GitHub-Mark-Light-64px.png"/>-->
+          <!--</div>-->
+          <!--<div-->
+            <!--class="contact-button"-->
+            <!--id="linkedin-button"-->
+            <!--onclick="window.open('https://www.linkedin.com/in/nathantfli/')">-->
+          <!--</div>-->
+          <!--<div-->
+            <!--class="contact-button"-->
+            <!--id="email-button"-->
+            <!--onclick="window.open('mailto:nathantfli@gmail.com')">-->
+          <!--</div>-->
         </div>
       </div>
     </div>

@@ -56,47 +56,36 @@ $(window).scroll(function(){
 });
 
 //Material slider cards
-// let sliderElem    = document.querySelector('.slider')
-// let dotElems      = sliderElem.querySelectorAll('.slider__dot')
-// let indicatorElem = sliderElem.querySelector('.slider__indicator')
+let workSliderElem    = document.querySelector('.work__slider')
+let workDotElems      = workSliderElem.querySelectorAll('.work__slider__dot')
+let workIndicatorElem = workSliderElem.querySelector('.work__slider__indicator')
 
-let sliderElem    = document.querySelector('.slider')
-let dotElems      = sliderElem.querySelectorAll('.slider__dot')
-let indicatorElem = sliderElem.querySelector('.slider__indicator')
-
-Array.prototype.forEach.call(dotElems, (dotElem) => {
-
+Array.prototype.forEach.call(workDotElems, (dotElem) => {
   dotElem.addEventListener('click', (e) => {
     e.preventDefault();
-
-    console.log("test")
-
-
-    let currentPos = parseInt(sliderElem.getAttribute('data-pos'))
+    let currentPos = parseInt(workSliderElem.getAttribute('data-pos'))
     let newPos     = parseInt(dotElem.getAttribute('data-pos'))
 
     let newDirection     = (newPos > currentPos ? 'right' : 'left')
     let currentDirection = (newPos < currentPos ? 'right' : 'left')
 
-    indicatorElem.classList.remove(`slider__indicator--${ currentDirection }`)
-    indicatorElem.classList.add(`slider__indicator--${ newDirection }`)
-    sliderElem.setAttribute('data-pos', newPos)
-
+    workIndicatorElem.classList.remove(`work__slider__indicator--${ currentDirection }`)
+    workIndicatorElem.classList.add(`work__slider__indicator--${ newDirection }`)
+    workSliderElem.setAttribute('data-pos', newPos)
   })
 
 });
 
-let sliderElem2    = document.querySelector('.projects__slider')
-let dotElems2      = sliderElem2.querySelectorAll('.projects__slider__dot')
-let indicatorElem2 = sliderElem2.querySelector('.projects__slider__indicator')
+let projectsSliderElem    = document.querySelector('.projects__slider')
+let projectsDotElems      = projectsSliderElem.querySelectorAll('.projects__slider__dot')
+let projectsIndicatorElem = projectsSliderElem.querySelector('.projects__slider__indicator')
 
-Array.prototype.forEach.call(dotElems2, (dotElem) => {
+Array.prototype.forEach.call(projectsDotElems, (dotElem) => {
 
   dotElem.addEventListener('click', (e) => {
     e.preventDefault();
 
-
-    let currentPos = parseInt(sliderElem2.getAttribute('data-pos'))
+    let currentPos = parseInt(projectsSliderElem.getAttribute('data-pos'))
     let newPos     = parseInt(dotElem.getAttribute('data-pos'))
 
     console.log("current: " + currentPos)
@@ -105,10 +94,9 @@ Array.prototype.forEach.call(dotElems2, (dotElem) => {
     let newDirection     = (newPos > currentPos ? 'right' : 'left')
     let currentDirection = (newPos < currentPos ? 'right' : 'left')
 
-    indicatorElem2.classList.remove(`projects__slider__indicator--${ currentDirection }`)
-    indicatorElem2.classList.add(`projects__slider__indicator--${ newDirection }`)
-    sliderElem2.setAttribute('data-pos', newPos)
-
+    projectsIndicatorElem.classList.remove(`projects__slider__indicator--${ currentDirection }`)
+    projectsIndicatorElem.classList.add(`projects__slider__indicator--${ newDirection }`)
+    projectsSliderElem.setAttribute('data-pos', newPos)
   })
 
 });

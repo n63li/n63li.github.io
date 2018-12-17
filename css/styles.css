@@ -10,7 +10,7 @@ body{
   font: normal 16px/1.9em "Inter UI", "Source Sans Pro","Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: #E9DFD6;
 }
 
 .layout-portfolio{
@@ -74,7 +74,6 @@ body{
 }
 
 .section-subheader{
-  display: inline-block;
   font-family: Inter UI,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
   font-size: 50px;
   font-weight: 600;
@@ -84,6 +83,19 @@ body{
   position: relative;
   z-index: 10;
   margin: 0;
+}
+
+.section-description{
+  display: inline-block;
+  font-family: Inter UI,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: left;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transform: translateZ(0);
+  position: relative;
+  z-index: 10;
+  margin-top: 40px;
 }
 
 .info-card{
@@ -104,26 +116,37 @@ body{
 }
 
 .picture-holder{
+  margin: 5em;
   position: absolute;
   float: right;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 50%;
-  background-color: #e7e8ed;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 100%;
 }
 
-.picture-container {
-  animation: fade-In 0.6s ease-out;
-  transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+.aoms-logo {
+  width: 540px;
+  height: 540px;
+  zoom: 0.75;
+}
+
+.axyz-logo{
+  margin-top: 4em;
+  margin-right: 2em;
+  width: 323px;
+  height: 323px;
+  zoom: 1.15;
+}
+
+.morgansolar-logo{
+  margin-top: 4em;
+  width: 556px;
+  height: 556px;
+  zoom: 0.75;
 }
 
 .contact-info{
@@ -132,7 +155,7 @@ body{
   padding-top: 34px;
   padding-right: 50px;
   padding-left: 50px;
-  background-color: #1f4954;
+  background-color: #003E7E;
   text-align: center;
   position: relative;
   box-sizing: border-box;
@@ -172,7 +195,7 @@ body{
   background-color: currentColor;
   width: 60px;
   right: initial;
-  margin: 70px auto 10px;
+  margin: 40px auto 10px;
   margin-left: 0px;
   transform: scaleX(0.8);
   transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -346,7 +369,7 @@ h3{
   float: left;
   width: 1100px;
   height: 100%;
-  padding-top: 75px;
+  padding-top: 50px;
   padding-right: 50px;
   padding-left: 50px;
   text-align: left;

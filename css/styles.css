@@ -50,7 +50,7 @@ body{
 .portfolio-intro-subheader{
   position: relative;
   padding: 0 20px;
-  margin-top: 100px;
+  margin-top: 20px;
   top: 34.5%;
   left: 0;
   right: 0;
@@ -176,11 +176,12 @@ body{
 
 .contact-info{
   width: 100%;
-  color: #fff;
+  color: #000;
+  height: 190px;
   padding-top: 34px;
   padding-right: 50px;
   padding-left: 50px;
-  background-color: #000;
+  background-color: #fff;
   text-align: center;
   position: relative;
   box-sizing: border-box;
@@ -196,7 +197,6 @@ body{
 
 .card-text{
   max-width: 55%;
-  margin: 0 auto;
   margin: 0 0 2em;
   font-size: 16px;
   line-height: 1.9em;
@@ -213,7 +213,7 @@ body{
   padding-top: 1em;
   padding-bottom: 2em;
   text-align: left;
-  margin-right: 0;
+  float: left;
 }
 
 .divider{
@@ -230,11 +230,10 @@ body{
 }
 
 .divider-vertical{
-  display: inline-block;
-  margin-top: 0px;
-  margin-left: 0px;
+  margin-top: 15px;
+  margin-left: 600px;
   width: 3px;
-  height: 60px;
+  height: 100px;
 }
 
 .arrow{
@@ -469,9 +468,13 @@ h3{
 }
 
 .contact-button-container{
-  display: inline-block;
-  position: relative;
-  text-align:center;
+  position: absolute;
+  float: right;
+  margin-top: 2.75em;
+  margin-right: 6.5em;
+  top: 0;
+  right: 0;
+  bottom: 0;
   height: 100%;
   transform-style: preserve-3d;
   transform: perspective(800px);

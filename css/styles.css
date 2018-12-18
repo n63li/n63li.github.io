@@ -10,7 +10,7 @@ body{
   font: normal 16px/1.9em "Inter UI", "Source Sans Pro","Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #E9DFD6;
+  background-color: #FFF;
 }
 
 .layout-portfolio{
@@ -50,7 +50,7 @@ body{
 .portfolio-intro-subheader{
   position: relative;
   padding: 0 20px;
-  margin-top: 20px;
+  margin-top: 100px;
   top: 34.5%;
   left: 0;
   right: 0;
@@ -159,7 +159,7 @@ body{
 .tabb-app{
   margin-top: 2em;
   margin-right: 10em;
-  width: 663px;
+  width: 661px;
   height: 1270px;
   zoom: 0.4;
   border-radius: 4%;
@@ -190,7 +190,7 @@ body{
   padding-top: 34px;
   padding-right: 50px;
   padding-left: 50px;
-  background-color: #fff;
+  background-color: #CDCDCD;
   text-align: center;
   position: relative;
   box-sizing: border-box;
@@ -507,20 +507,32 @@ h3{
   /*max-height: 400px;*/
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
-.work__slider__slide:nth-child(1), .projects__slider__slide:nth-child(1) {
-  background: #309954;
+.work__slider__slide:nth-child(1){
+  background: #659DBD;
 }
-.work__slider__slide:nth-child(2), .projects__slider__slide:nth-child(2) {
+.work__slider__slide:nth-child(2){
+  background: #CF6766;
+}
+.work__slider__slide:nth-child(3){
   background: #FFBD3C;
 }
-.work__slider__slide:nth-child(3), .projects__slider__slide:nth-child(3) {
-  background: #F8593E;
-}
-.work__slider__slide:nth-child(4), .projects__slider__slide:nth-child(4) {
+.work__slider__slide:nth-child(4){
   background: #4086FA;
 }
-.projects__slider__slide:nth-child(5) {
-  background: #4FFF;
+.projects__slider__slide:nth-child(1){
+  background: #B4DFE5;
+}
+.projects__slider__slide:nth-child(2){
+  background: #FFBD3C;
+}
+.projects__slider__slide:nth-child(3){
+  background: #86C232;
+}
+.projects__slider__slide:nth-child(4){
+  background: #659DBD;
+}
+.projects__slider__slide:nth-child(5){
+  background: #BC4639;
 }
 
 .contact-button-container{
@@ -539,15 +551,10 @@ h3{
 html {
   font-size: 2.5em;
 }
-body {
-  background-color: #fff;
-  padding: 25px;
-  text-align: center;
-}
 
 /* Wrapper */
 .icon-button {
-  background-color: white;
+  background-color: #CDCDCD;
   border-radius: 2.6rem;
   cursor: pointer;
   display: inline-block;

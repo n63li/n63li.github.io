@@ -142,10 +142,18 @@ body{
 }
 
 .morgansolar-logo{
-  /*margin-top: 4em;*/
   width: 556px;
   height: 556px;
   zoom: 0.75;
+}
+
+.android-app{
+  margin-top: 2em;
+  margin-right: 10em;
+  width: 665px;
+  height: 1270px;
+  zoom: 0.4;
+  border-radius: 4%;
 }
 
 .contact-info{
@@ -154,7 +162,7 @@ body{
   padding-top: 34px;
   padding-right: 50px;
   padding-left: 50px;
-  background-color: #FFF;
+  background-color: #000;
   text-align: center;
   position: relative;
   box-sizing: border-box;
@@ -183,9 +191,11 @@ body{
 }
 
 .contact-text{
-  max-width: 95%;
+  max-width: 50%;
   padding-top: 1em;
   padding-bottom: 2em;
+  text-align: left;
+  margin-right: 0;
 }
 
 .divider{
@@ -202,8 +212,9 @@ body{
 }
 
 .divider-vertical{
+  display: inline-block;
   margin-top: 0px;
-  margin-left: 500px;
+  margin-left: 0px;
   width: 3px;
   height: 60px;
 }

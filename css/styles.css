@@ -383,9 +383,9 @@ h3{
   height: 100%;
   overflow: hidden;
 }
-.work__slider__slides, .projects__slider__slides {
+.work__slider__slides{
   position: relative;
-  width: 400%;
+  width: 300%;
   height: 100%;
   transition: transform 0.3s cubic-bezier(0.51, 0.92, 0.24, 1);
   will-change: transform;
@@ -394,14 +394,14 @@ h3{
   transform: translateX(0%);
 }
 .work__slider[data-pos="1"] .work__slider__slides{
-  transform: translateX(-25%);
+  transform: translateX(-33.33%);
 }
 .work__slider[data-pos="2"] .work__slider__slides{
-  transform: translateX(-50%);
+  transform: translateX(-66.67%);
 }
-.work__slider[data-pos="3"] .work__slider__slides{
-  transform: translateX(-75%);
-}
+/*.work__slider[data-pos="3"] .work__slider__slides{*/
+  /*transform: translateX(-75%);*/
+/*}*/
 
 .projects__slider__slides {
   position: relative;
@@ -422,7 +422,7 @@ h3{
 .projects__slider[data-pos="3"] .projects__slider__slides {
   transform: translateX(-60%);
 }
-.projects__slider[data-pos="3"] .projects__slider__slides {
+.projects__slider[data-pos="4"] .projects__slider__slides {
   transform: translateX(-80%);
 }
 .work__slider__slide, .projects__slider__slide {
@@ -462,22 +462,22 @@ h3{
 .work__slider__indicator--right, .projects__slider__indicator--right {
   transition: left 0.3s 0.1s cubic-bezier(0.51, 0.92, 0.24, 1.15), right 0.3s cubic-bezier(0.51, 0.92, 0.24, 1.15);
 }
-.work__slider[data-pos="0"] .work__slider__indicator, .projects__slider[data-pos="0"] .projects__slider__indicator {
+.work__slider[data-pos="0"] .work__slider__indicator{
   left: 0em;
-  right: 6em;
-}
-.work__slider[data-pos="1"] .work__slider__indicator, .projects__slider[data-pos="1"] .projects__slider__indicator {
-  left: 2em;
   right: 4em;
 }
-.work__slider[data-pos="2"] .work__slider__indicator, .projects__slider[data-pos="2"] .projects__slider__indicator {
-  left: 4em;
+.work__slider[data-pos="1"] .work__slider__indicator{
+  left: 2em;
   right: 2em;
 }
-.work__slider[data-pos="3"] .work__slider__indicator, .projects__slider[data-pos="3"] .projects__slider__indicator {
-  left: 6em;
+.work__slider[data-pos="2"] .work__slider__indicator{
+  left: 4em;
   right: 0em;
 }
+/*.work__slider[data-pos="3"] .work__slider__indicator{*/
+  /*left: 6em;*/
+  /*right: 0em;*/
+/*}*/
 
 .projects__slider[data-pos="0"] .projects__slider__indicator {
   left: 0em;

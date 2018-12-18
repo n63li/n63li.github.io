@@ -147,10 +147,19 @@ body{
   zoom: 0.75;
 }
 
-.android-app{
+.workout-app{
   margin-top: 2em;
   margin-right: 10em;
   width: 665px;
+  height: 1270px;
+  zoom: 0.4;
+  border-radius: 4%;
+}
+
+.tabb-app{
+  margin-top: 2em;
+  margin-right: 10em;
+  width: 663px;
   height: 1270px;
   zoom: 0.4;
   border-radius: 4%;

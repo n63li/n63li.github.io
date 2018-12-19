@@ -21,7 +21,7 @@ body{
 }
 
 .site-header-portfolio {
-  margin-top: 10px;
+  margin-top: 1.25vh;
   position: relative;
   width: 100%;
 }
@@ -50,7 +50,7 @@ body{
 .portfolio-intro-subheader{
   position: relative;
   padding: 0 20px;
-  margin-top: 100px;
+  margin-top: 12vh;
   top: 34.5%;
   left: 0;
   right: 0;

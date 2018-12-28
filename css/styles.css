@@ -147,6 +147,15 @@ body{
   zoom: 0.75;
 }
 
+.ESIIRP{
+  margin-top: 15em;
+  margin-right: 1em;
+  width: 2700px;
+  height: 1200px;
+  zoom: 0.2;
+  border-radius: 4%;
+}
+
 .workout-app{
   margin-top: 2em;
   margin-right: 10em;

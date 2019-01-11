@@ -1,0 +1,77 @@
+/*INTRO CONTAINER*/
+nav ul{
+  list-style: none;
+}
+
+nav ul li{
+  display: inline-block;
+}
+
+nav ul li a{
+  text-decoration: none;
+}
+
+/* MEDIA */
+.aoms-logo {
+  width: 28vw;
+  height: 28vw;
+  zoom: 0.75;
+  background-image: url('../images/Logo-favicon-01.png');
+}
+
+.axyz-logo{
+  width: 17vw;
+  height: 17vw;
+  zoom: 1.15;
+}
+
+.morgansolar-logo{
+  width: 30vw;
+  height: 30vw;
+  zoom: 0.75;
+}
+
+.ESIIRP{
+  margin-top: 15em;
+  margin-right: 1em;
+  width: 140vw;
+  height: 130vh;
+  zoom: 0.2;
+  border-radius: 4%;
+}
+
+.workout-app{
+  margin-top: 2em;
+  margin-right: 10em;
+  width: 34vw;
+  height: 134vh;
+  zoom: 0.4;
+  border-radius: 4%;
+}
+
+.tabb-app{
+  margin-top: 2em;
+  margin-right: 10em;
+  width: 34vw;
+  height: 133vh;
+  zoom: 0.4;
+  border-radius: 4%;
+}
+
+.MTE241-video{
+  margin-top: 2.25em;
+  margin-right: 10em;
+  width: 20.5vw;
+  height: 75vh;
+  zoom: 0.7;
+  border-radius: 5%;
+}
+
+.PCB{
+  margin-top: 2.5em;
+  margin-right: 3em;
+  width: 71vw;
+  height: 150vh;
+  zoom: 0.35;
+  border-radius: 1%;
+}

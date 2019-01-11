@@ -16,51 +16,39 @@
     <meta name="HandheldFriendly" content="true">
     <title>Personal Website</title>
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/features.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
   </head>
 
-  <body class="layout-portfolio">
-  <div class="site-header site-header-portfolio">
-      <div class="container-buttons">
-        <button
-          id="experience-button"
-          class="bttn-stretch bttn-md bttn-default">
-          Work
-        </button>
-        <button
-            id="projects-button"
-            class="bttn-stretch bttn-md bttn-default">
-          Projects
-        </button>
-        <button
-          id="contact-button"
-          class="bttn-stretch bttn-md bttn-default">
-          Contact
-        </button>
-        <button
-          class="bttn-stretch bttn-md bttn-default"
-          onclick="window.open('../n63li.github.io/pdf/Nathan_Li_Resume.pdf')">
-        <!--onclick="window.open('../personalwebsite/pdf/Nathan_Li_Resume.pdf')">-->
-          Portfolio
-        </button>
+  <body>
+    <div class="intro-container">
+      <div class="header">
+        <nav>
+          <ul>
+            <li><a id="experience-button" class="bttn-stretch bttn-md bttn-default">Work</a></li>
+            <li><a id="projects-button" class="bttn-stretch bttn-md bttn-default">Projects</a></li>
+            <li><a id="contact-button" class="bttn-stretch bttn-md bttn-default">Contact</a></li>
+            <li><a class="bttn-stretch bttn-md bttn-default" href="../n63li.github.io/pdf/Nathan_Li_Resume.pdf" target="_blank">Portfolio</a></li>
+          </ul>
+        </nav>
       </div>
+
+      <div class="name-container">
+        <h3>Hello, I'm</h3>
+        <h1 class="ml6">
+          <span class="text-wrapper">
+            <span class="letters">Nathan Li</span>
+          </span>
+        </h1>
+        <h2>a mechatronics student with a passion for software and design.</h2>
+      </div>
+
+      <div class="arrow bounce"></div>
     </div>
 
-    <div class="content-wrapper portfolio-intro">
-      <h3 class="portfolio-intro-subheader">Hello, I'm</h3>
-      <h1 class="ml6">
-        <span class="text-wrapper">
-          <span class="letters">Nathan Li</span>
-        </span>
-      </h1>
-      <h2>a mechatronics student with a passion for software and design.</h2>
-    </div>
-
-
-    <div class="arrow bounce"></div>
-
-    <div id="work" class="content-wrapper work-experience">
-      <h2 class="section-header">Work.</h2>
+    <div id="work" class="content-container">
+      <h2>Work.</h2>
       <div class="info-card">
         <div id= "work-slider" class="work__slider" data-pos="0">
           <div class="work__slider__slides">
@@ -69,9 +57,9 @@
               <p class="section-description">AOMS Technologies</p>
               <div class="divider"></div>
               <a href="https://www.aoms-tech.com/" target="_blank">
-                <div class="picture-holder aoms-logo"
-                     style="background-image: url('../n63li.github.io/images/Logo-favicon-01.png');">
-                <!--style="background-image: url('../personalwebsite/images/Logo-favicon-01.png');">-->
+                <div class="picture-holder aoms-logo">
+                      <!--style="background-image: url('../personalwebsite/images/Logo-favicon-01.png');">-->
+                     <!--style="background-image: url('../n63li.github.io/images/Logo-favicon-01.png');">-->
                 </div>
               </a>
               <p class="card-text">
@@ -79,7 +67,8 @@
                 I focused in the sourcing and design of enclosures to house sensitive electrical and optical sensing
                 components using SolidWorks. In addition to my primary tasks, I was exposed to Python in multiple projects
                 such as creating a 3D model of a concrete obstruction and automating the data acquisition and analysis of
-                fiber optic temperature sensors inside a furnace oven.
+                fiber optic temperature sensors inside a furnace oven. I also created a fiber optic interrogator simulator
+                using Python and Tkinter to plot and analyze data from simulated fiber optic sensors.
               </p>
             </div>
             <div class="work__slider__slide">
@@ -88,8 +77,9 @@
               <div class="divider"></div>
               <a href="https://www.axyz.com/us/" target="_blank">
                 <div class="picture-holder axyz-logo"
-                     style="background-image: url('../n63li.github.io/images/axyz_circular.png');">
-                <!--style="background-image: url('../personalwebsite/images/axyz_circular.png');">-->
+                     style="background-image: url('../personalwebsite/images/axyz_circular.png');">
+                     <!--style="background-image: url('../n63li.github.io/images/axyz_circular.png');">-->
+
                 </div>
               </a>
               <p class="card-text">
@@ -106,8 +96,8 @@
               <a href="https://morgansolar.com/" target="_blank">
                 <div
                   class="picture-holder morgansolar-logo"
-                  style="background-image: url('../n63li.github.io/images/morgansolar_icon.png');">
-                <!--style="background-image: url('../personalwebsite/images/morgansolar_icon.png');">-->
+                  style="background-image: url('../personalwebsite/images/morgansolar_icon.png');">
+                <!--style="background-image: url('../n63li.github.io/images/morgansolar_icon.png');">-->
                 </div>
               </a>
               <p class="card-text">
@@ -134,8 +124,8 @@
       </div>
     </div>
 
-    <div id="projects" class="content-wrapper projects">
-      <h2 class="section-header">Play.</h2>
+    <div id="projects" class="content-container">
+      <h2>Play.</h2>
       <div class="info-card">
         <div class="projects__slider" data-pos="0">
           <div class="projects__slider__slides">
@@ -145,8 +135,8 @@
               <div class="divider"></div>
               <a href="https://github.com/n63li/ESIIRP" target="_blank">
                 <div class="picture-holder ESIIRP"
-                     style="background-image: url('../n63li.github.io/images/ESIIRP.png');">
-                <!--style="background-image: url('../personalwebsite/images/ESIIRP.png');">-->
+                     style="background-image: url('../personalwebsite/images/ESIIRP.png');">
+                <!--style="background-image: url('../n63li.github.io/images/ESIIRP.png');">-->
                 </div>
               </a>
               <p class="card-text">
@@ -161,8 +151,8 @@
               <div class="divider"></div>
               <a href="https://github.com/n63li/WorkoutApp" target="_blank">
                 <div class="picture-holder workout-app"
-                     style="background-image: url('../n63li.github.io/images/workout-app-display.png');">
-                <!--style="background-image: url('../personalwebsite/images/workout-app-display.png');">-->
+                     style="background-image: url('../personalwebsite/images/workout-app-display.png');">
+                <!--style="background-image: url('../n63li.github.io/images/workout-app-display.png');">-->
                 </div>
               </a>
               <p class="card-text">
@@ -178,8 +168,8 @@
               <div class="divider"></div>
               <a href="https://github.com/TateHodgkinson/Tabb" target="_blank">
                 <div class="picture-holder tabb-app"
-                     style="background-image: url('../n63li.github.io/images/tabb.png');">
-                <!--style="background-image: url('../personalwebsite/images/tabb.png');">-->
+                     style="background-image: url('../personalwebsite/images/tabb.png');">
+                <!--style="background-image: url('../n63li.github.io/images/tabb.png');">-->
                 </div>
               </a>
               <p class="card-text">
@@ -210,8 +200,8 @@
               <p class="section-description">Autodesk EAGLE, Soldering</p>
               <div class="divider"></div>
               <div class="picture-holder PCB"
-                   style="background-image: url('../n63li.github.io/images/PCB.jpeg');">
-              <!--style="background-image: url('../personalwebsite/images/PCB.jpeg');">-->
+                   style="background-image: url('../personalwebsite/images/PCB.jpeg');">
+              <!--style="background-image: url('../n63li.github.io/images/PCB.jpeg');">-->
               </div>
               <p class="card-text">
                 Designed an audio amplifier PCB using a LM386 op-amp with filtering and decoupling. Performed schematic
@@ -232,7 +222,7 @@
       </div>
     </div>
 
-    <div id="contact" class="content-wrapper contact-card">
+    <div id="contact" class="content-container contact-card">
       <h2 class="section-header">Give a shout!</h2>
       <div class="contact-info">
         <p class="card-text contact-text">
@@ -257,6 +247,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenLite.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>-->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
     <script type="text/javascript" src="./js/main.js"></script>
 
   </body>

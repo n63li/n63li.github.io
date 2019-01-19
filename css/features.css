@@ -19,7 +19,7 @@ nav ul li a{
   font-weight: 400;
   cursor: pointer;
   position: relative;
-  font-size: 15px;
+  font-size: 1.1vw;
   text-transform: uppercase;
   font-family: inherit;
   padding: 5px 12px;
@@ -134,7 +134,7 @@ nav ul li a{
   /*height: 130vh;*/
   width: 2700px;
   height: 1200px;
-  zoom: 0.2;
+  zoom: 0.19;
   border-radius: 4%;
   background-image: url('../images/ESIIRP.png');
 }
@@ -166,8 +166,10 @@ nav ul li a{
 .MTE241-video{
   margin-top: 2.25em;
   margin-right: 10em;
-  width: 20.5vw;
-  height: 75vh;
+  /*width: 20.5vw;*/
+  /*height: 75vh;*/
+  width: 400px;
+  height: 600px;
   zoom: 0.7;
   border-radius: 5%;
 }

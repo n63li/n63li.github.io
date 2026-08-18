@@ -59,7 +59,6 @@ li {
   padding: 50px;
   top: 50%;
   transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
   max-width: 600px;
 }
 
@@ -73,8 +72,6 @@ li {
   margin-right: 35px;
   z-index: 1000;
   transition: all .2s ease-in-out;
-  -webkit-transition: all .2s ease-in-out;
-  -webkit-transform-origin: left;
   transform-origin: left;
   text-decoration: none;
 }
@@ -107,7 +104,6 @@ li {
   margin-top: 10px;
   padding: 13px 26px;
   transition: .1s ease-out;
-  -webkit-transition: .1s ease-out;
 }
 
 .square {
@@ -119,7 +115,6 @@ li {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -144,7 +139,6 @@ li {
   .about-info {
     top: 0;
     transform: none;
-    -webkit-transform: none;
   }
 
   #about p, li {
@@ -162,7 +156,6 @@ li {
   .about-info {
     top: 0;
     transform: none;
-    -webkit-transform: none;
   }
 }
 
@@ -176,7 +169,6 @@ li {
   .about-info {
     top: 0;
     transform: none;
-    -webkit-transform: none;
     margin: auto;
   }
 }
@@ -192,7 +184,6 @@ li {
     top: 0;
     max-width: 1050px;
     transform: none;
-    -webkit-transform: none;
     margin: auto;
   }
 

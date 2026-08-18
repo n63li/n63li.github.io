@@ -8,15 +8,11 @@ body, html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: futura-ptm,"system-ui",Helvetica Neue,sans-serif;;
+  font-family: futura-ptm,"system-ui",Helvetica Neue,sans-serif;
   font-size: calc(18px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-weight: 400;
   line-height: 1.5;
   text-align: left;
-}
-
-div {
-  display: block;
 }
 
 h1 {
@@ -43,10 +39,6 @@ li {
   margin-bottom: 1rem;
 }
 
-.layout-container {
-  height: 100%;
-}
-
 #about {
   position: fixed;
   height: 100%;
@@ -70,9 +62,6 @@ li {
   padding: 15px 15px 0 0;
   color: black;
   margin-right: 35px;
-  z-index: 1000;
-  transition: all .2s ease-in-out;
-  transform-origin: left;
   text-decoration: none;
 }
 
@@ -115,14 +104,8 @@ li {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   font-size: 0.75rem;
-}
-
-.btn:not(:disabled):not(.disabled) {
-  cursor: pointer;
 }
 
 .btn:focus, .btn:hover {
